@@ -1,0 +1,73 @@
+{
+  "dataset_shape": [
+    442,
+    11
+  ],
+  "best_model_by_test_r2": "Lasso",
+  "model_comparison": [
+    {
+      "Model": "Lasso",
+      "Train R\u00b2": 0.5272214154674504,
+      "Test R\u00b2": 0.455541399027904,
+      "MSE": 2884.624288735213,
+      "RMSE": 53.708698445737944
+    },
+    {
+      "Model": "Ridge",
+      "Train R\u00b2": 0.5276319768458047,
+      "Test R\u00b2": 0.45414652070698214,
+      "MSE": 2892.0145657501735,
+      "RMSE": 53.7774540653439
+    },
+    {
+      "Model": "ElasticNet",
+      "Train R\u00b2": 0.5277070037242579,
+      "Test R\u00b2": 0.454011202261828,
+      "MSE": 2892.731503406973,
+      "RMSE": 53.784119435080214
+    },
+    {
+      "Model": "OLS Linear Regression",
+      "Train R\u00b2": 0.5279193863361498,
+      "Test R\u00b2": 0.45260276297191926,
+      "MSE": 2900.1936284934827,
+      "RMSE": 53.85344583676594
+    }
+  ],
+  "cross_validation": [
+    {
+      "Model": "Lasso",
+      "Mean CV R\u00b2": 0.48119462874826,
+      "Std CV R\u00b2": 0.039798258918515905,
+      "Test R\u00b2": 0.455541399027904
+    },
+    {
+      "Model": "ElasticNet",
+      "Mean CV R\u00b2": 0.48079080830541726,
+      "Std CV R\u00b2": 0.04046463996149159,
+      "Test R\u00b2": 0.454011202261828
+    },
+    {
+      "Model": "Ridge",
+      "Mean CV R\u00b2": 0.48078421459067383,
+      "Std CV R\u00b2": 0.04042238957464297,
+      "Test R\u00b2": 0.45414652070698214
+    },
+    {
+      "Model": "OLS Linear Regression",
+      "Mean CV R\u00b2": 0.4803645434411372,
+      "Std CV R\u00b2": 0.04088569489179033,
+      "Test R\u00b2": 0.45260276297191926
+    }
+  ],
+  "ridge_best_params": {
+    "model__alpha": 1
+  },
+  "lasso_best_params": {
+    "model__alpha": 0.1
+  },
+  "elasticnet_best_params": {
+    "model__alpha": 0.01,
+    "model__l1_ratio": 0.8
+  }
+}
